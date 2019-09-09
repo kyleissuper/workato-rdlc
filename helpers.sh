@@ -1,6 +1,25 @@
 #!/bin/bash
 #
 # Workato recipe development lifecycle functions
+#
+#
+######################################################
+#
+# Environment variables assumed:
+# 
+#   # Get these from workato.com/users/current/edit
+#   $wDevAuth = "user_email={}&&user_token={}"
+#   $wStgAuth = "user_email={}&&user_token={}"
+#   $wPrdAuth = "user_email={}&&user_token={}"
+# 
+#   # API token for test suite endpoint
+#   $wStgApiToken = "..."
+#
+# Hardcoded values in this version:
+#   Workato Folder IDs, recipe IDs, and test suite
+#   endpoint URL
+#
+######################################################
 
 
 # Push to branch in Github from Workato package
